@@ -38,7 +38,7 @@ currentDate.textContent= todayFormatted;
 
 
 function getLatLon() {
-    fetch(`http://api.openweathermap.org/geo/1.0/direct?q=${city.value}&limit=5&appid=${APIKey}`)
+    fetch(`https://api.openweathermap.org/geo/1.0/direct?q=${city.value}&limit=5&appid=${APIKey}`)
     .then(res => res.json())
     .then(data => {
         lat = data[0].lat;
